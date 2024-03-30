@@ -15,8 +15,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('wordnet')
 
-with open('model.pkl', 'rb') as f:
-    model = pickle.load(f)
+model = joblib.load('model.pkl')
 
 st.title("News Data Collection")
 
